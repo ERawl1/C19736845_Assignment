@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class CameraMovement : MonoBehaviour
-{
-    private Rigidbody rb;
+{   
     public float speed = 5;
     public float targetSpeed = 25;
     float distanceunit = 0;
@@ -14,10 +13,6 @@ public class CameraMovement : MonoBehaviour
 
     void Start()
     {
-        //rb = GetComponent<Rigidbody>();
-        //rb.velocity = transform.forward * speed;
-
-
         //Invoking distance to place as UI 
         InvokeRepeating("distance", 0, 1 / speed);
     }
@@ -25,9 +20,6 @@ public class CameraMovement : MonoBehaviour
    
     void Update()
     {
-        //speed += Time.deltaTime * acceleration;
-
-        //rb.velocity = transform.forward * speed;
 
         //Moving the camera forward 
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
