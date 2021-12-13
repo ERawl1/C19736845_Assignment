@@ -12,5 +12,32 @@ Controls are as follows:
 W, A, S, D - Movement
 R - Reset Game
 
+# How it works
+
+At the start of the game the initial tiles, mesh, obstacles and pickups are spawned, the player can then navigate through the random assortment of these items to get the highest score they can. 
+
+# List of Classes/Assets
+
+| Class/asset | Source |
+|-----------|-----------|
+| CameraMovement.cs | Self written |
+| Pickup.cs | Modified from [SK-Studios](https://github.com/SK-Studios/3D-Endless-Runner-in-Unity) |
+| MeshGenerator.cs | From [Brackeys](https://www.youtube.com/watch?v=64NblGkAabk) |
+| GroundSpawn.cs | Modified from [SK-Studios](https://github.com/SK-Studios/3D-Endless-Runner-in-Unity) |
+| Obstacle.cs | Modified from [SK-Studios](https://github.com/SK-Studios/3D-Endless-Runner-in-Unity) |
+| GroundSpawn.cs | Modified from [SK-Studios](https://github.com/SK-Studios/3D-Endless-Runner-in-Unity)|
+| GameManager.cs | Modified from [SK-Studios](https://github.com/SK-Studios/3D-Endless-Runner-in-Unity)|
+| PlayerMovement.cs | Modified from [SK-Studios](https://github.com/SK-Studios/3D-Endless-Runner-in-Unity)|
+
+# References
+
+https://github.com/SK-Studios/3D-Endless-Runner-in-Unity
+
+https://www.youtube.com/watch?v=64NblGkAabk
+
+# Video 
+
+https://youtu.be/GUyU4Huv4uE
+
 # Earlier Proposal
 For my procedural generation project, I aim to create a procedurally generated solar system, the planets will be procedurally generated with differing terrains, colours, etc. I hope to depict a scene of an astronaut in space, observing the galaxy before them.
