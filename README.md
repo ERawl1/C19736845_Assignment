@@ -35,6 +35,14 @@ https://github.com/SK-Studios/3D-Endless-Runner-in-Unity
 
 https://www.youtube.com/watch?v=64NblGkAabk
 
+https://www.youtube.com/watch?v=eJEpeUH1EMg
+
+https://www.youtube.com/watch?v=lNyZ9K71Vhc
+
+https://www.youtube.com/playlist?list=PLvcJYjdXa962PHXFjQ5ugP59Ayia-rxM3
+
+https://www.youtube.com/watch?v=u5hRtTEhnOA&list=PLZ1b66Z1KFKit4cSry_LWBisrSbVkEF4t
+
 # What I am most proud of 
 
 I'm proud of creating a fun little game to help showcase procedural generation, I modified the game to make it a bit more random, and adding a few extra details to make it stand out more and I was quite happy with how it turned out, I'd like to add more features to it.
