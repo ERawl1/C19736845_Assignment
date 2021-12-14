@@ -25,9 +25,12 @@ public class GroundTile : MonoBehaviour
 
     void SpawnObstacle()
     {
+        //Chooses a random point in the index
         int obstacleSpawnIndex = Random.Range(2, 6);
+        //Places the obstacle on the chosen transform point empty
         Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
 
+        //Spawns the obstacle
         Instantiate(obstaclePrefab, spawnPoint.position, Quaternion.identity, transform);
     }
 
@@ -36,6 +39,7 @@ public class GroundTile : MonoBehaviour
     void SpawnCoins()
     {
         int coinsToSpawn = 3;
+        //For loop to spawn pickups at a random point in the object collider
         for (int i = 0; i < coinsToSpawn; i++)
         {
             GameObject temp = Instantiate(pickupPrefab, transform);
@@ -46,6 +50,7 @@ public class GroundTile : MonoBehaviour
 
     Vector3 GetRandomPointInCollider(Collider collider)
     {
+        //Used to find a random point in the collider for pickup spawning 
         Vector3 point = new Vector3(
             Random.Range(collider.bounds.min.x, collider.bounds.max.x),
             Random.Range(collider.bounds.min.y, collider.bounds.max.y),
@@ -55,6 +60,8 @@ public class GroundTile : MonoBehaviour
         {
             point = GetRandomPointInCollider(collider);
         }
+
+        //Used to generate the pickups at height instead of at a set level
         point.y = Random.Range(2, 8);
        
         return point;

@@ -19,7 +19,7 @@ public class GroundSpawn : MonoBehaviour
 
    public void SpawnTile()
     {
-        
+        //Spawns the next tile at the chosen spawn point in the tile index
         GameObject temp = Instantiate(groundTile, nextSpawnPoint, Quaternion.identity);
         nextSpawnPoint = temp.transform.GetChild(1).transform.position;
     }
