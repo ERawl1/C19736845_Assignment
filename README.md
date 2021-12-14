@@ -65,8 +65,7 @@ I'm proud of creating a fun little game to help showcase procedural generation, 
 ```
 
 ```C#
- Vector3 GetRandomPointInCollider(Collider collider)
-    {
+  //Used to find a random point in the collider for pickup spawning 
         Vector3 point = new Vector3(
             Random.Range(collider.bounds.min.x, collider.bounds.max.x),
             Random.Range(collider.bounds.min.y, collider.bounds.max.y),
@@ -76,9 +75,12 @@ I'm proud of creating a fun little game to help showcase procedural generation, 
         {
             point = GetRandomPointInCollider(collider);
         }
+
+        //Used to generate the pickups at height instead of at a set level
         point.y = Random.Range(2, 8);
        
         return point;
+        
 ```
 
 # Video 
